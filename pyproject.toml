@@ -5,9 +5,9 @@ requires = ["hatchling", "hatch-odoo"]
 build-backend = "hatchling.build"
 
 [project]
-name = "ocadays202-uv-demo"
+name = "my-project"
 version = "0.1.0"
-description = "OCA Days 2024 Odoo with uv demo"
+description = "Based on OCA Days 2024 Odoo demo with uv-level9"
 readme = "README.md"
 requires-python = "==3.12.*"
 dynamic = ["dependencies"]
@@ -16,7 +16,7 @@ dynamic = ["dependencies"]
 [tool.uv]
 cache-keys = [
     { file = "pyproject.toml" },
-    { file = "odoo/addons/*/__manifest__.py" },
+    { file = "odoo/**/__manifest__.py" },
 ]
 
 [tool.hatch.build]
@@ -34,7 +34,7 @@ dependencies = [
     "setuptools<71",
     "werkzeug==3.0.*",
 ]
-addons_dirs = ["odoo/addons"]
+addons_dirs = ["odoo"]
 
 [tool.uv.sources]
 odoo = { git = "https://github.com/OCA/OCB", branch = "17.0" }

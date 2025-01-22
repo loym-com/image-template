@@ -310,6 +310,7 @@ source = { editable = "." }
 dependencies = [
     { name = "lxml", extra = ["html-clean"] },
     { name = "odoo" },
+    { name = "odoo-addon-auth-admin-passkey" },
     { name = "setuptools" },
     { name = "werkzeug" },
 ]
@@ -318,6 +319,7 @@ dependencies = [
 requires-dist = [
     { name = "lxml", extras = ["html-clean"], specifier = ">=5.2" },
     { name = "odoo", git = "https://github.com/OCA/OCB?branch=16.0" },
+    { name = "odoo-addon-auth-admin-passkey", specifier = ">=16.0.dev0,<16.1.dev0" },
     { name = "setuptools", specifier = "<71" },
     { name = "werkzeug", specifier = "==3.0.*" },
 ]
@@ -376,6 +378,17 @@ dependencies = [
     { name = "xlsxwriter" },
     { name = "xlwt" },
     { name = "zeep" },
+]
+
+[[package]]
+name = "odoo-addon-auth-admin-passkey"
+version = "16.0.1.0.0.9"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f0/29/ba041cf5a1c6708deaf212eb1ec858d99eb659766daacd08165fcd69c95d/odoo_addon_auth_admin_passkey-16.0.1.0.0.9-py3-none-any.whl", hash = "sha256:e87c425405277fe01e78981829d8d2486aba2e5b0c158fc09b8d80765e997e3c", size = 45297 },
 ]
 
 [[package]]

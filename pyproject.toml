@@ -34,9 +34,11 @@ dependencies = [
     "setuptools<71",
     "werkzeug==3.0.*",
     "click-odoo-contrib",
+    "ldap", # Should come automatically when auth_ldap is in __manifest__.py. BTW [tool.uv.sources] works for odoo but not for addons.
 ]
 addons_dirs = ["odoo"]
 
 [tool.uv.sources]
 odoo = { git = "https://github.com/OCA/OCB", branch = "17.0" }
-odoo-addon-mis_builder_budget = { git = "https://github.com/OCA/mis-builder", rev = "refs/pull/634/head", subdirectory = "mis_builder_budget" }
+# odoo-addon-sale_invoice_blocking = { git = "https://github.com/OCA/sale-workflow", rev = "refs/pull/3546/head", subdirectory = "sale_invoice_blocking" }
+# odoo-addon-mis_builder_budget = { git = "https://github.com/OCA/mis-builder", rev = "refs/pull/634/head", subdirectory = "mis_builder_budget" }

@@ -359,6 +359,12 @@ wheels = [
 ]
 
 [[package]]
+name = "ldap"
+version = "2.0.0.404"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/79/f2/9b0739316a3af8a336e18dd705c48d0c4dd0d50fe3a94976bd6372a3695b/ldap-2.0.0.404.tar.gz", hash = "sha256:60da99f3c93a9667737e5fea7e692bb0a6fa649ceb488c51aed603e0e7c39433", size = 1989 }
+
+[[package]]
 name = "libsass"
 version = "0.23.0"
 source = { registry = "https://pypi.org/simple" }
@@ -491,6 +497,7 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "click-odoo-contrib" },
+    { name = "ldap" },
     { name = "lxml", extra = ["html-clean"] },
     { name = "odoo" },
     { name = "setuptools" },
@@ -500,6 +507,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "click-odoo-contrib" },
+    { name = "ldap" },
     { name = "lxml", extras = ["html-clean"], specifier = ">=5.2" },
     { name = "odoo", git = "https://github.com/OCA/OCB?branch=17.0" },
     { name = "setuptools", specifier = "<71" },

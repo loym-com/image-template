@@ -1,0 +1,4 @@
+[submodule "odoo/enterprise"]
+	path = odoo/enterprise
+	url = git@github.com:odoo/enterprise
+	branch = 18.0

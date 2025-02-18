@@ -1,0 +1,8 @@
+[submodule "odoo/design-themes"]
+    path = odoo/design-themes
+    url = git@github.com:odoo/design-themes.git
+    branch = 17.0
+[submodule "odoo/enterprise"]
+    path = odoo/enterprise
+    url = git@github.com:odoo/enterprise.git
+    branch = 17.0

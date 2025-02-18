@@ -1,0 +1,4 @@
+[submodule "odoo/design-themes"]
+	path = odoo/design-themes
+	url = git@github.com:odoo/design-themes
+	branch = 18.0

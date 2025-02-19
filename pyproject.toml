@@ -35,7 +35,7 @@ dependencies = [
     "werkzeug==3.0.*",
     "click-odoo-contrib",
 ]
-addons_dirs = ["odoo/design-themes"]
+addons_dirs = ["odoo"]
 
 [tool.uv.sources]
 odoo = { git = "https://github.com/OCA/OCB", branch = "18.0" }

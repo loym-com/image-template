@@ -38,11 +38,12 @@ dependencies = [
     "asn1crypto",
     "cryptography",
     "geoip2",
-    "ldap",
+    # ldap -> python-ldap
     "pdfminer",
     "phonenumbers",
     "pyOpenSSL",
     "pyserial",
+    "python-ldap",
     "pyusb",
     "qrcode",
     # odoo/enterprise

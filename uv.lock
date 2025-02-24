@@ -428,12 +428,6 @@ wheels = [
 ]
 
 [[package]]
-name = "ldap"
-version = "2.0.0.404"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/79/f2/9b0739316a3af8a336e18dd705c48d0c4dd0d50fe3a94976bd6372a3695b/ldap-2.0.0.404.tar.gz", hash = "sha256:60da99f3c93a9667737e5fea7e692bb0a6fa649ceb488c51aed603e0e7c39433", size = 1989 }
-
-[[package]]
 name = "libsass"
 version = "0.23.0"
 source = { registry = "https://pypi.org/simple" }
@@ -571,7 +565,6 @@ dependencies = [
     { name = "dbfread" },
     { name = "geoip2" },
     { name = "google-auth" },
-    { name = "ldap" },
     { name = "lxml", extra = ["html-clean"] },
     { name = "odoo" },
     { name = "odoo-addon-auth-admin-passkey" },
@@ -580,6 +573,7 @@ dependencies = [
     { name = "pyjwt" },
     { name = "pyopenssl" },
     { name = "pyserial" },
+    { name = "python-ldap" },
     { name = "pyusb" },
     { name = "qrcode" },
     { name = "setuptools" },
@@ -596,7 +590,6 @@ requires-dist = [
     { name = "dbfread" },
     { name = "geoip2" },
     { name = "google-auth" },
-    { name = "ldap" },
     { name = "lxml", extras = ["html-clean"], specifier = ">=5.2" },
     { name = "odoo", git = "https://github.com/OCA/OCB?branch=18.0" },
     { name = "odoo-addon-auth-admin-passkey", specifier = "==18.0.*" },
@@ -605,6 +598,7 @@ requires-dist = [
     { name = "pyjwt" },
     { name = "pyopenssl" },
     { name = "pyserial" },
+    { name = "python-ldap" },
     { name = "pyusb" },
     { name = "qrcode" },
     { name = "setuptools", specifier = "<71" },
@@ -929,6 +923,16 @@ sdist = { url = "https://files.pythonhosted.org/packages/66/c0/0c8b6ad9f17a802ee
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl", hash = "sha256:a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427", size = 229892 },
 ]
+
+[[package]]
+name = "python-ldap"
+version = "3.4.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyasn1" },
+    { name = "pyasn1-modules" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/fd/8b/1eeb4025dc1d3ac2f16678f38dec9ebdde6271c74955b72db5ce7a4dbfbd/python-ldap-3.4.4.tar.gz", hash = "sha256:7edb0accec4e037797705f3a05cbf36a9fde50d08c8f67f2aef99a2628fab828", size = 377889 }
 
 [[package]]
 name = "python-stdnum"

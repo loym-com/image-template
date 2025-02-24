@@ -3,3 +3,8 @@
 	url = git@github.com:odoo/design-themes
 	branch = 18.0
 	shallow = true
+[submodule "odoo/industry"]
+	path = odoo/industry
+	url = git@github.com:odoo/industry.git
+	branch = 18.0
+	shallow = true

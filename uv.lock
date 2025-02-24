@@ -95,6 +95,15 @@ wheels = [
 ]
 
 [[package]]
+name = "cachetools"
+version = "5.5.2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/6c/81/3747dad6b14fa2cf53fcf10548cf5aea6913e96fab41a3c198676f8948a5/cachetools-5.5.2.tar.gz", hash = "sha256:1a661caa9175d26759571b2e19580f9d6393969e5dfca11fdb1f947a23e640d4", size = 28380 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/72/76/20fa66124dbe6be5cafeb312ece67de6b61dd91a0247d1ea13db4ebb33c2/cachetools-5.5.2-py3-none-any.whl", hash = "sha256:d26a22bcc62eb95c3beabd9f1ee5e820d3d2704fe2967cbe350e20c8ffcd3f0a", size = 10080 },
+]
+
+[[package]]
 name = "cbor2"
 version = "5.6.5"
 source = { registry = "https://pypi.org/simple" }
@@ -250,6 +259,15 @@ wheels = [
 ]
 
 [[package]]
+name = "dbfread"
+version = "2.0.7"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ad/ae/a5891681f5012724d062a4ca63ec2ff539c73d5804ba594e7e0e72099d3f/dbfread-2.0.7.tar.gz", hash = "sha256:07c8a9af06ffad3f6f03e8fe91ad7d2733e31a26d2b72c4dd4cfbae07ee3b73d", size = 33212 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4c/94/51349e43503e30ed7b4ecfe68a8809cdb58f722c0feb79d18b1f1e36fe74/dbfread-2.0.7-py2.py3-none-any.whl", hash = "sha256:f604def58c59694fa0160d7be5d0b8d594467278d2bb6a47d46daf7162c84cec", size = 20018 },
+]
+
+[[package]]
 name = "decorator"
 version = "5.1.1"
 source = { registry = "https://pypi.org/simple" }
@@ -341,6 +359,20 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/0d/8b/02a07125324e23d64ec342ae7a4cff8dc7271114e787317a5f219027bf1b/gevent-24.2.1-cp312-cp312-musllinux_1_1_aarch64.whl", hash = "sha256:f8a04cf0c5b7139bc6368b461257d4a757ea2fe89b3773e494d235b7dd51119f", size = 5482031 },
     { url = "https://files.pythonhosted.org/packages/5f/fe/288ccd562ac20d5e4ae2624313b699ee35c76be1faa9104b414bfe714a67/gevent-24.2.1-cp312-cp312-musllinux_1_1_x86_64.whl", hash = "sha256:9d8d0642c63d453179058abc4143e30718b19a85cbf58c2744c9a63f06a1d388", size = 6812353 },
     { url = "https://files.pythonhosted.org/packages/2e/90/d9fcdc22864d0cf471630071c264289b9a803892d6f55e895a69c2e3574b/gevent-24.2.1-cp312-cp312-win_amd64.whl", hash = "sha256:94138682e68ec197db42ad7442d3cf9b328069c3ad8e4e5022e6b5cd3e7ffae5", size = 1523715 },
+]
+
+[[package]]
+name = "google-auth"
+version = "2.38.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "cachetools" },
+    { name = "pyasn1-modules" },
+    { name = "rsa" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c6/eb/d504ba1daf190af6b204a9d4714d457462b486043744901a6eeea711f913/google_auth-2.38.0.tar.gz", hash = "sha256:8285113607d3b80a3f1543b75962447ba8a09fe85783432a784fdeef6ac094c4", size = 270866 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/9d/47/603554949a37bca5b7f894d51896a9c534b9eab808e2520a748e081669d0/google_auth-2.38.0-py2.py3-none-any.whl", hash = "sha256:e7dae6694313f434a2727bf2906f27ad259bae090d7aa896590d86feec3d9d4a", size = 210770 },
 ]
 
 [[package]]
@@ -526,23 +558,37 @@ version = "0.1.0"
 source = { editable = "." }
 dependencies = [
     { name = "click-odoo-contrib" },
+    { name = "cryptography" },
+    { name = "dbfread" },
+    { name = "google-auth" },
     { name = "lxml", extra = ["html-clean"] },
     { name = "odoo" },
     { name = "odoo-addon-auth-admin-passkey" },
     { name = "phonenumbers" },
+    { name = "pyjwt" },
+    { name = "pyopenssl" },
     { name = "setuptools" },
     { name = "werkzeug" },
+    { name = "xmlsec" },
+    { name = "zeep" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "click-odoo-contrib" },
+    { name = "cryptography" },
+    { name = "dbfread" },
+    { name = "google-auth" },
     { name = "lxml", extras = ["html-clean"], specifier = ">=5.2" },
     { name = "odoo", git = "https://github.com/OCA/OCB?branch=18.0" },
     { name = "odoo-addon-auth-admin-passkey", specifier = "==18.0.*" },
     { name = "phonenumbers" },
+    { name = "pyjwt" },
+    { name = "pyopenssl" },
     { name = "setuptools", specifier = "<71" },
     { name = "werkzeug", specifier = "==3.0.*" },
+    { name = "xmlsec" },
+    { name = "zeep" },
 ]
 
 [[package]]
@@ -754,12 +800,42 @@ wheels = [
 ]
 
 [[package]]
+name = "pyasn1"
+version = "0.6.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/ba/e9/01f1a64245b89f039897cb0130016d79f77d52669aae6ee7b159a6c4c018/pyasn1-0.6.1.tar.gz", hash = "sha256:6f580d2bdd84365380830acf45550f2511469f673cb4a5ae3857a3170128b034", size = 145322 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c8/f1/d6a797abb14f6283c0ddff96bbdd46937f64122b8c925cab503dd37f8214/pyasn1-0.6.1-py3-none-any.whl", hash = "sha256:0d632f46f2ba09143da3a8afe9e33fb6f92fa2320ab7e886e2d0f7672af84629", size = 83135 },
+]
+
+[[package]]
+name = "pyasn1-modules"
+version = "0.4.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyasn1" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/1d/67/6afbf0d507f73c32d21084a79946bfcfca5fbc62a72057e9c23797a737c9/pyasn1_modules-0.4.1.tar.gz", hash = "sha256:c28e2dbf9c06ad61c71a075c7e0f9fd0f1b0bb2d2ad4377f240d33ac2ab60a7c", size = 310028 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/77/89/bc88a6711935ba795a679ea6ebee07e128050d6382eaa35a0a47c8032bdc/pyasn1_modules-0.4.1-py3-none-any.whl", hash = "sha256:49bfa96b45a292b711e986f222502c1c9a5e1f4e568fc30e2574a6c7d07838fd", size = 181537 },
+]
+
+[[package]]
 name = "pycparser"
 version = "2.22"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/1d/b2/31537cf4b1ca988837256c910a668b553fceb8f069bedc4b1c826024b52c/pycparser-2.22.tar.gz", hash = "sha256:491c8be9c040f5390f5bf44a5b07752bd07f56edf992381b05c701439eec10f6", size = 172736 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/13/a3/a812df4e2dd5696d1f351d58b8fe16a405b234ad2886a0dab9183fb78109/pycparser-2.22-py3-none-any.whl", hash = "sha256:c3702b6d3dd8c7abc1afa565d7e63d53a1d0bd86cdc24edd75470f4de499cfcc", size = 117552 },
+]
+
+[[package]]
+name = "pyjwt"
+version = "2.10.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e7/46/bd74733ff231675599650d3e47f361794b22ef3e3770998dda30d3b63726/pyjwt-2.10.1.tar.gz", hash = "sha256:3cc5772eb20009233caf06e9d8a0577824723b44e6648ee0a2aedb6cf9381953", size = 87785 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/61/ad/689f02752eeec26aed679477e80e632ef1b682313be70793d798c1d5fc8f/PyJWT-2.10.1-py3-none-any.whl", hash = "sha256:dcdd193e30abefd5debf142f9adfcdd2b58004e644f25406ffaebd50bd98dacb", size = 22997 },
 ]
 
 [[package]]
@@ -921,6 +997,18 @@ wheels = [
 ]
 
 [[package]]
+name = "rsa"
+version = "4.9"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pyasn1" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/aa/65/7d973b89c4d2351d7fb232c2e452547ddfa243e93131e7cfa766da627b52/rsa-4.9.tar.gz", hash = "sha256:e38464a49c6c85d7f1351b0126661487a7e0a14a50f1675ec50eb34d4f20ef21", size = 29711 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/49/97/fa78e3d2f65c02c8e1268b9aba606569fe97f6c8f7c2d74394553347c145/rsa-4.9-py3-none-any.whl", hash = "sha256:90260d9058e514786967344d0ef75fa8727eed8a7d2e43ce9f4bcf1b536174f7", size = 34315 },
+]
+
+[[package]]
 name = "setuptools"
 version = "70.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1014,6 +1102,26 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/06/97/56a6f56ce44578a69343449aa5a0d98eefe04085d69da539f3034e2cd5c1/xlwt-1.3.0.tar.gz", hash = "sha256:c59912717a9b28f1a3c2a98fd60741014b06b043936dcecbc113eaaada156c88", size = 153929 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/44/48/def306413b25c3d01753603b1a222a011b8621aed27cd7f89cbc27e6b0f4/xlwt-1.3.0-py2.py3-none-any.whl", hash = "sha256:a082260524678ba48a297d922cc385f58278b8aa68741596a87de01a9c628b2e", size = 99981 },
+]
+
+[[package]]
+name = "xmlsec"
+version = "1.3.14"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "lxml" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/25/5b/244459b51dfe91211c1d9ec68fb5307dfc51e014698f52de575d25f753e0/xmlsec-1.3.14.tar.gz", hash = "sha256:934f804f2f895bcdb86f1eaee236b661013560ee69ec108d29cdd6e5f292a2d9", size = 68854 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/35/66/cb02e33c72fe7279016d60802e1e1b6b007a8b056ca34b990fca30356921/xmlsec-1.3.14-cp312-cp312-macosx_10_9_x86_64.whl", hash = "sha256:1eb3dcf244a52f796377112d8f238dbb522eb87facffb498425dc8582a84a6bf", size = 3299742 },
+    { url = "https://files.pythonhosted.org/packages/60/f2/a7489f3bd3bb7c2bbebe100a72e9e10cb645aac5ef160a7ed01e9b7817aa/xmlsec-1.3.14-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:330147ce59fbe56a9be5b2085d739c55a569f112576b3f1b33681f87416eaf33", size = 3675677 },
+    { url = "https://files.pythonhosted.org/packages/15/1a/4703acc7dea24146db06cd4f93c4e9d6a148ff10f5b21a7eddca36fc4da4/xmlsec-1.3.14-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:ed4034939d8566ccdcd3b4e4f23c63fd807fb8763ae5668d59a19e11640a8242", size = 4201542 },
+    { url = "https://files.pythonhosted.org/packages/c4/b6/1e5ee93e0150721d4c832860c321f0edc3ed753f4a0f376f48cce41bf697/xmlsec-1.3.14-cp312-cp312-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:a98eadfcb0c3b23ccceb7a2f245811f8d784bd287640dcfe696a26b9db1e2fc0", size = 3616672 },
+    { url = "https://files.pythonhosted.org/packages/6e/43/e83346261f25ee1f9eb0b6719bb77d19dff194333a02c0747dd1d360d520/xmlsec-1.3.14-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:86ff7b2711557c1087b72b0a1a88d82eafbf2a6d38b97309a6f7101d4a7041c3", size = 3921961 },
+    { url = "https://files.pythonhosted.org/packages/d9/d2/228f5e7edf8cf2affb76c22cd77a1adf423a8ce1b73c727a32d6939dcb18/xmlsec-1.3.14-cp312-cp312-musllinux_1_1_aarch64.whl", hash = "sha256:774d5d1e45f07f953c1cc14fd055c1063f0725f7248b6b0e681f59fd8638934d", size = 4263947 },
+    { url = "https://files.pythonhosted.org/packages/dc/d5/393ab85efbf633ea0d10e21a8dbb0a83d5b6ba66a16ce1fb987b90262335/xmlsec-1.3.14-cp312-cp312-musllinux_1_1_x86_64.whl", hash = "sha256:bd10ca3201f164482775a7ce61bf7ee9aade2e7d032046044dd0f6f52c91d79d", size = 4010992 },
+    { url = "https://files.pythonhosted.org/packages/d1/70/d74de2e26fb9c92220411d44aa179826d525491c033e3828650ad3fafaaf/xmlsec-1.3.14-cp312-cp312-win32.whl", hash = "sha256:19c86bab1498e4c2e56d8e2c878f461ccb6e56b67fd7522b0c8fda46d8910781", size = 2146077 },
+    { url = "https://files.pythonhosted.org/packages/e3/3f/75e69fa9d2084524ca4e796442d8058a78d78c64c1e8229d552c031a23b4/xmlsec-1.3.14-cp312-cp312-win_amd64.whl", hash = "sha256:d0762f4232bce2c7f6c0af329db8b821b4460bbe123a2528fb5677d03db7a4b5", size = 2441942 },
 ]
 
 [[package]]

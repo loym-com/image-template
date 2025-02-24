@@ -34,7 +34,15 @@ dependencies = [
     "setuptools<71",
     "werkzeug==3.0.*",
     "click-odoo-contrib",
+    # odoo/enterprise
+    "cryptography",
+    "dbfread",
+    "google_auth",
     "phonenumbers",
+    "pyjwt",
+    "pyOpenSSL",
+    "xmlsec",
+    "zeep",
 ]
 addons_dirs = ["odoo"]
 

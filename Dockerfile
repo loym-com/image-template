@@ -35,6 +35,8 @@ RUN set -e \
        python3.12-dev \
        build-essential \
        libpq-dev \
+       libldap2-dev \
+       libsasl2-dev \
   && apt -y clean \
   && rm -rf /var/lib/apt/lists/*
 

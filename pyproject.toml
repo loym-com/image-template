@@ -34,6 +34,18 @@ dependencies = [
     "setuptools<71",
     "werkzeug==3.0.*",
     "click-odoo-contrib",
+    # odoo/community
+    "asn1crypto",
+    "cryptography",
+    "geoip2",
+    # ldap -> python-ldap
+    "pdfminer",
+    "phonenumbers",
+    "pyOpenSSL",
+    "pyserial",
+    "python-ldap",
+    "pyusb",
+    "qrcode",
 ]
 addons_dirs = ["odoo"]
 

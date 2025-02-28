@@ -20,7 +20,7 @@ cache-keys = [
 ]
 
 [tool.hatch.build]
-packages = ["odoo"]
+packages = ["addons"]
 
 # Enable the hatch-odoo metadata hook to generate dependencies from addons manifests.
 [tool.hatch.metadata.hooks.odoo-addons-dependencies]
@@ -47,9 +47,9 @@ dependencies = [
     "pyusb",
     "qrcode",
 ]
-addons_dirs = ["odoo"]
+addons_dirs = ["addons"]
 
 [tool.uv.sources]
 odoo = { git = "https://github.com/OCA/OCB", branch = "18.0" }
-
+odoo-addon-account_reconcile_oca = { git = "https://github.com/OCA/account-reconcile", rev = "refs/pull/808/head", subdirectory = "account_reconcile" }
 # odoo-addon-mis_builder_budget = { git = "https://github.com/OCA/mis-builder", rev = "refs/pull/634/head", subdirectory = "mis_builder_budget" }

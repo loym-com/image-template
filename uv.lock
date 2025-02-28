@@ -533,6 +533,9 @@ dependencies = [
     { name = "geoip2" },
     { name = "lxml", extra = ["html-clean"] },
     { name = "odoo" },
+    { name = "odoo-addon-account-financial-report" },
+    { name = "odoo-addon-account-reconcile-oca" },
+    { name = "odoo-addon-account-tax-balance" },
     { name = "odoo-addon-auth-admin-passkey" },
     { name = "pdfminer" },
     { name = "phonenumbers" },
@@ -553,6 +556,9 @@ requires-dist = [
     { name = "geoip2" },
     { name = "lxml", extras = ["html-clean"], specifier = ">=5.2" },
     { name = "odoo", git = "https://github.com/OCA/OCB?branch=18.0" },
+    { name = "odoo-addon-account-financial-report", specifier = "==18.0.*" },
+    { name = "odoo-addon-account-reconcile-oca", git = "https://github.com/OCA/account-reconcile?subdirectory=account_reconcile_oca&rev=refs%2Fpull%2F808%2Fhead" },
+    { name = "odoo-addon-account-tax-balance", specifier = "==18.0.*" },
     { name = "odoo-addon-auth-admin-passkey", specifier = "==18.0.*" },
     { name = "pdfminer" },
     { name = "phonenumbers" },
@@ -580,7 +586,7 @@ wheels = [
 [[package]]
 name = "odoo"
 version = "18.0"
-source = { git = "https://github.com/OCA/OCB?branch=18.0#0c052cd1f2b1b540b80c3542012bee79960dd9a8" }
+source = { git = "https://github.com/OCA/OCB?branch=18.0#fa84ee21e9d3b3bd111ccf39a32634fe8ccbdb5a" }
 dependencies = [
     { name = "asn1crypto" },
     { name = "babel" },
@@ -626,6 +632,63 @@ dependencies = [
 ]
 
 [[package]]
+name = "odoo-addon-account-financial-report"
+version = "18.0.1.0.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+    { name = "odoo-addon-date-range" },
+    { name = "odoo-addon-report-xlsx" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/39/0e/93b73562884bb96873a6c5ccf93773df79e6022c93f07fab51a19ca7df34/odoo_addon_account_financial_report-18.0.1.0.3-py3-none-any.whl", hash = "sha256:63660ea294baf069952951d9c51fa793f3790c924dbaf370be211ccbadffb0d3", size = 311241 },
+]
+
+[[package]]
+name = "odoo-addon-account-reconcile-model-oca"
+version = "18.0.1.0.0.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ba/80/e0a1d92d486687b74c8780fc54df51c4669a06801ddd471652e5b6683058/odoo_addon_account_reconcile_model_oca-18.0.1.0.0.4-py3-none-any.whl", hash = "sha256:4ebfe001d19a8783ea850aa516c7f2281fb04bd187071793cee9aa3063aa5473", size = 40839 },
+]
+
+[[package]]
+name = "odoo-addon-account-reconcile-oca"
+version = "18.0.1.0.0.4"
+source = { git = "https://github.com/OCA/account-reconcile?subdirectory=account_reconcile_oca&rev=refs%2Fpull%2F808%2Fhead#584632f6b8d04b9240c96029f4db6c6f54bdcf74" }
+dependencies = [
+    { name = "odoo" },
+    { name = "odoo-addon-account-reconcile-model-oca" },
+    { name = "odoo-addon-account-statement-base" },
+]
+
+[[package]]
+name = "odoo-addon-account-statement-base"
+version = "18.0.1.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d8/bb/348ad6dfacc3560a11a324480fe9f724069ce9e72d0f00d2c7569839280f/odoo_addon_account_statement_base-18.0.1.1.0-py3-none-any.whl", hash = "sha256:0553e1c0d7f44e4adf082156bd1750c741dc44d44c85587d53477c73b404ad6a", size = 34216 },
+]
+
+[[package]]
+name = "odoo-addon-account-tax-balance"
+version = "18.0.1.0.0.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+    { name = "odoo-addon-date-range" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ab/a5/4b86eff824367bccc280597fa52bcb6dd7daa931b05e457b97458c0204d6/odoo_addon_account_tax_balance-18.0.1.0.0.3-py3-none-any.whl", hash = "sha256:dff0e6afda79bf0a71e41cbdae77f12cf236c75bdde54327304a6137e067f4f0", size = 83994 },
+]
+
+[[package]]
 name = "odoo-addon-auth-admin-passkey"
 version = "18.0.1.0.0.3"
 source = { registry = "https://pypi.org/simple" }
@@ -634,6 +697,30 @@ dependencies = [
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/70/a8/b54f21a7b22aa840b1abac04d0b55b3c5444637386efa6165070aaabd652/odoo_addon_auth_admin_passkey-18.0.1.0.0.3-py3-none-any.whl", hash = "sha256:018301d1a012fb0e062bb5881c6531acc7131043abbac51397685a37393dd66f", size = 45781 },
+]
+
+[[package]]
+name = "odoo-addon-date-range"
+version = "18.0.1.0.0.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/af/27/dce0d236c298a94829837b8246ac80a5f78260d60e2d8e680fb30bd46f0c/odoo_addon_date_range-18.0.1.0.0.4-py3-none-any.whl", hash = "sha256:c4480b596dea3f4716fe0579078743af014792f6eb7693e1b277dd9001c4b286", size = 2300356 },
+]
+
+[[package]]
+name = "odoo-addon-report-xlsx"
+version = "18.0.1.0.0.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+    { name = "xlrd" },
+    { name = "xlsxwriter" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/cd/30/e2d54aa9ffe1d6d391b180f7973e7100ffa56765832f23e8d5ccef26a613/odoo_addon_report_xlsx-18.0.1.0.0.3-py3-none-any.whl", hash = "sha256:ca37941d7845be9db1c9e891bb9258f07ca92cdf246fd4d8c3fd649d40b63120", size = 46228 },
 ]
 
 [[package]]

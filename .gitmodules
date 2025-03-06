@@ -2,9 +2,9 @@
 	path = odoo/design-themes
 	url = git@github.com:odoo/design-themes
 	branch = 17.0
-	# shallow = true
+	shallow = true
 [submodule "odoo/enterprise"]
 	path = odoo/enterprise
 	url = git@github.com:odoo/enterprise
 	branch = 17.0
-	# shallow = true
+	shallow = true

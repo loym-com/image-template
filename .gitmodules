@@ -2,4 +2,4 @@
 	path = odoo/enterprise
 	url = git@github.com:odoo/enterprise
 	branch = 16.0
-	shallow = false
+	shallow = true

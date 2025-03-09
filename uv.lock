@@ -622,7 +622,7 @@ wheels = [
 [[package]]
 name = "odoo"
 version = "18.0"
-source = { git = "https://github.com/OCA/OCB?branch=18.0#606899e1e26662a6cc4ecaaa49347f4cb8e6d0fb" }
+source = { git = "https://github.com/OCA/OCB?branch=18.0#5bc7b9e23ee16bb261af4ea249c9ad31410e1bf4" }
 dependencies = [
     { name = "asn1crypto" },
     { name = "babel" },

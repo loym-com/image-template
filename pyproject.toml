@@ -5,7 +5,7 @@ requires = ["hatchling", "hatch-odoo"]
 build-backend = "hatchling.build"
 
 [project]
-name = "my-project"
+name = "18e"
 version = "0.1.0"
 description = "Based on OCA Days 2024 Odoo demo with uv-level9"
 readme = "README.md"

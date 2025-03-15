@@ -51,7 +51,7 @@ dependencies = [
     "dbfread",
     "google_auth",
     "pyjwt",
-    "xmlsec",
+    # "xmlsec", # error
     "zeep",
 ]
 addons_dirs = ["odoo"]

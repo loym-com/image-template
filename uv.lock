@@ -3,12 +3,65 @@ revision = 1
 requires-python = "==3.12.*"
 
 [[package]]
+name = "18e"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "asn1crypto" },
+    { name = "click-odoo-contrib" },
+    { name = "cryptography" },
+    { name = "dbfread" },
+    { name = "geoip2" },
+    { name = "google-auth" },
+    { name = "lxml", extra = ["html-clean"] },
+    { name = "odoo" },
+    { name = "odoo-addon-auth-admin-passkey" },
+    { name = "pdfminer" },
+    { name = "phonenumbers" },
+    { name = "pyjwt" },
+    { name = "pyopenssl" },
+    { name = "pyserial" },
+    { name = "python-ldap" },
+    { name = "pyusb" },
+    { name = "qrcode" },
+    { name = "setuptools" },
+    { name = "werkzeug" },
+    { name = "xmlsec" },
+    { name = "zeep" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "asn1crypto" },
+    { name = "click-odoo-contrib" },
+    { name = "cryptography" },
+    { name = "dbfread" },
+    { name = "geoip2" },
+    { name = "google-auth" },
+    { name = "lxml", extras = ["html-clean"], specifier = ">=5.2" },
+    { name = "odoo", git = "https://github.com/OCA/OCB?branch=18.0" },
+    { name = "odoo-addon-auth-admin-passkey", specifier = "==18.0.*" },
+    { name = "pdfminer" },
+    { name = "phonenumbers" },
+    { name = "pyjwt" },
+    { name = "pyopenssl" },
+    { name = "pyserial" },
+    { name = "python-ldap" },
+    { name = "pyusb" },
+    { name = "qrcode" },
+    { name = "setuptools", specifier = "<71" },
+    { name = "werkzeug", specifier = "==3.0.*" },
+    { name = "xmlsec" },
+    { name = "zeep" },
+]
+
+[[package]]
 name = "aiohappyeyeballs"
-version = "2.5.0"
+version = "2.6.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/a2/0c/458958007041f4b4de2d307e6b75d9e7554dad0baf26fe7a48b741aac126/aiohappyeyeballs-2.5.0.tar.gz", hash = "sha256:18fde6204a76deeabc97c48bdd01d5801cfda5d6b9c8bbeb1aaaee9d648ca191", size = 22494 }
+sdist = { url = "https://files.pythonhosted.org/packages/26/30/f84a107a9c4331c14b2b586036f40965c128aa4fee4dda5d3d51cb14ad54/aiohappyeyeballs-2.6.1.tar.gz", hash = "sha256:c3f9d0113123803ccadfdf3f0faa505bc78e6a72d1cc4806cbd719826e943558", size = 22760 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1b/9a/e4886864ce06e1579bd428208127fbdc0d62049c751e4e9e3b509c0059dc/aiohappyeyeballs-2.5.0-py3-none-any.whl", hash = "sha256:0850b580748c7071db98bffff6d4c94028d0d3035acc20fd721a0ce7e8cac35d", size = 15128 },
+    { url = "https://files.pythonhosted.org/packages/0f/15/5bf3b99495fb160b63f95972b81750f18f7f4e02ad051373b669d17d44f2/aiohappyeyeballs-2.6.1-py3-none-any.whl", hash = "sha256:f349ba8f4b75cb25c99c5c2d84e997e485204d2902a9597802b0371f09331fb8", size = 15265 },
 ]
 
 [[package]]
@@ -67,11 +120,11 @@ wheels = [
 
 [[package]]
 name = "attrs"
-version = "25.1.0"
+version = "25.3.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/49/7c/fdf464bcc51d23881d110abd74b512a42b3d5d376a55a831b44c603ae17f/attrs-25.1.0.tar.gz", hash = "sha256:1c97078a80c814273a76b2a298a932eb681c87415c11dee0a6921de7f1b02c3e", size = 810562 }
+sdist = { url = "https://files.pythonhosted.org/packages/5a/b0/1367933a8532ee6ff8d63537de4f1177af4bff9f3e829baf7331f595bb24/attrs-25.3.0.tar.gz", hash = "sha256:75d7cefc7fb576747b2c81b4442d4d4a1ce0900973527c011d1030fd3bf4af1b", size = 812032 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/fc/30/d4986a882011f9df997a55e6becd864812ccfcd821d64aac8570ee39f719/attrs-25.1.0-py3-none-any.whl", hash = "sha256:c75a69e28a550a7e93789579c22aa26b0f5b83b75dc4e08fe092980051e1090a", size = 63152 },
+    { url = "https://files.pythonhosted.org/packages/77/06/bb80f5f86020c4551da315d78b3ab75e8228f89f0162f2c3a819e407941a/attrs-25.3.0-py3-none-any.whl", hash = "sha256:427318ce031701fea540783410126f03899a97ffc6f61596ad581ac2e40e3bc3", size = 63815 },
 ]
 
 [[package]]
@@ -555,59 +608,6 @@ wheels = [
 ]
 
 [[package]]
-name = "my-project"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "asn1crypto" },
-    { name = "click-odoo-contrib" },
-    { name = "cryptography" },
-    { name = "dbfread" },
-    { name = "geoip2" },
-    { name = "google-auth" },
-    { name = "lxml", extra = ["html-clean"] },
-    { name = "odoo" },
-    { name = "odoo-addon-auth-admin-passkey" },
-    { name = "pdfminer" },
-    { name = "phonenumbers" },
-    { name = "pyjwt" },
-    { name = "pyopenssl" },
-    { name = "pyserial" },
-    { name = "python-ldap" },
-    { name = "pyusb" },
-    { name = "qrcode" },
-    { name = "setuptools" },
-    { name = "werkzeug" },
-    { name = "xmlsec" },
-    { name = "zeep" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "asn1crypto" },
-    { name = "click-odoo-contrib" },
-    { name = "cryptography" },
-    { name = "dbfread" },
-    { name = "geoip2" },
-    { name = "google-auth" },
-    { name = "lxml", extras = ["html-clean"], specifier = ">=5.2" },
-    { name = "odoo", git = "https://github.com/OCA/OCB?branch=18.0" },
-    { name = "odoo-addon-auth-admin-passkey", specifier = "==18.0.*" },
-    { name = "pdfminer" },
-    { name = "phonenumbers" },
-    { name = "pyjwt" },
-    { name = "pyopenssl" },
-    { name = "pyserial" },
-    { name = "python-ldap" },
-    { name = "pyusb" },
-    { name = "qrcode" },
-    { name = "setuptools", specifier = "<71" },
-    { name = "werkzeug", specifier = "==3.0.*" },
-    { name = "xmlsec" },
-    { name = "zeep" },
-]
-
-[[package]]
 name = "num2words"
 version = "0.5.14"
 source = { registry = "https://pypi.org/simple" }
@@ -730,11 +730,11 @@ sdist = { url = "https://files.pythonhosted.org/packages/71/a3/155c5cde5f9c0b106
 
 [[package]]
 name = "phonenumbers"
-version = "9.0.0"
+version = "9.0.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/88/96/58ab3aa4f8695c85f5dce60c15bb3b113856f420d4f0575f6b6e92c1acb5/phonenumbers-9.0.0.tar.gz", hash = "sha256:094a6f728e3c2b1906df4494a480743a3c797320f721f2b53f1400fd4d8ed5f5", size = 2296775 }
+sdist = { url = "https://files.pythonhosted.org/packages/8c/b3/e88f437e6a726c49f9488c49d50fad19e7ac0517947d864c147d9759de5c/phonenumbers-9.0.1.tar.gz", hash = "sha256:7507bd6228d3b5fc4a3661c28f08157ac12a3386aca50bc6d2e71d91a00ff2be", size = 2296736 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/62/82/943ce12a9db8932be3a1baff7cbc93524262942f2c41678242f410c8f420/phonenumbers-9.0.0-py2.py3-none-any.whl", hash = "sha256:f566eddf6219d9af9b4aad454ba411a1df565d13b875a490fd33d1d202c1148d", size = 2582416 },
+    { url = "https://files.pythonhosted.org/packages/65/c5/09aacf3a079cd33ecc22c48075c23b57b4a699a4ced000f3202bbd5068b5/phonenumbers-9.0.1-py2.py3-none-any.whl", hash = "sha256:ea8ec8083d85e5dcba48a6ba633ee68481e60331200f99744ae24a08e5026b13", size = 2582389 },
 ]
 
 [[package]]
@@ -1151,22 +1151,16 @@ wheels = [
 
 [[package]]
 name = "xmlsec"
-version = "1.3.14"
+version = "1.3.15"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "lxml" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/25/5b/244459b51dfe91211c1d9ec68fb5307dfc51e014698f52de575d25f753e0/xmlsec-1.3.14.tar.gz", hash = "sha256:934f804f2f895bcdb86f1eaee236b661013560ee69ec108d29cdd6e5f292a2d9", size = 68854 }
+sdist = { url = "https://files.pythonhosted.org/packages/6b/0b/d851367799b865500efd0b255c39fc5d30892ea28c1569ca185a76d19576/xmlsec-1.3.15.tar.gz", hash = "sha256:baa856b83d0012e278e6f6cbec96ac8128de667ca9fa9a2eeb02c752e816f6d8", size = 114117 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/35/66/cb02e33c72fe7279016d60802e1e1b6b007a8b056ca34b990fca30356921/xmlsec-1.3.14-cp312-cp312-macosx_10_9_x86_64.whl", hash = "sha256:1eb3dcf244a52f796377112d8f238dbb522eb87facffb498425dc8582a84a6bf", size = 3299742 },
-    { url = "https://files.pythonhosted.org/packages/60/f2/a7489f3bd3bb7c2bbebe100a72e9e10cb645aac5ef160a7ed01e9b7817aa/xmlsec-1.3.14-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:330147ce59fbe56a9be5b2085d739c55a569f112576b3f1b33681f87416eaf33", size = 3675677 },
-    { url = "https://files.pythonhosted.org/packages/15/1a/4703acc7dea24146db06cd4f93c4e9d6a148ff10f5b21a7eddca36fc4da4/xmlsec-1.3.14-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:ed4034939d8566ccdcd3b4e4f23c63fd807fb8763ae5668d59a19e11640a8242", size = 4201542 },
-    { url = "https://files.pythonhosted.org/packages/c4/b6/1e5ee93e0150721d4c832860c321f0edc3ed753f4a0f376f48cce41bf697/xmlsec-1.3.14-cp312-cp312-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:a98eadfcb0c3b23ccceb7a2f245811f8d784bd287640dcfe696a26b9db1e2fc0", size = 3616672 },
-    { url = "https://files.pythonhosted.org/packages/6e/43/e83346261f25ee1f9eb0b6719bb77d19dff194333a02c0747dd1d360d520/xmlsec-1.3.14-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:86ff7b2711557c1087b72b0a1a88d82eafbf2a6d38b97309a6f7101d4a7041c3", size = 3921961 },
-    { url = "https://files.pythonhosted.org/packages/d9/d2/228f5e7edf8cf2affb76c22cd77a1adf423a8ce1b73c727a32d6939dcb18/xmlsec-1.3.14-cp312-cp312-musllinux_1_1_aarch64.whl", hash = "sha256:774d5d1e45f07f953c1cc14fd055c1063f0725f7248b6b0e681f59fd8638934d", size = 4263947 },
-    { url = "https://files.pythonhosted.org/packages/dc/d5/393ab85efbf633ea0d10e21a8dbb0a83d5b6ba66a16ce1fb987b90262335/xmlsec-1.3.14-cp312-cp312-musllinux_1_1_x86_64.whl", hash = "sha256:bd10ca3201f164482775a7ce61bf7ee9aade2e7d032046044dd0f6f52c91d79d", size = 4010992 },
-    { url = "https://files.pythonhosted.org/packages/d1/70/d74de2e26fb9c92220411d44aa179826d525491c033e3828650ad3fafaaf/xmlsec-1.3.14-cp312-cp312-win32.whl", hash = "sha256:19c86bab1498e4c2e56d8e2c878f461ccb6e56b67fd7522b0c8fda46d8910781", size = 2146077 },
-    { url = "https://files.pythonhosted.org/packages/e3/3f/75e69fa9d2084524ca4e796442d8058a78d78c64c1e8229d552c031a23b4/xmlsec-1.3.14-cp312-cp312-win_amd64.whl", hash = "sha256:d0762f4232bce2c7f6c0af329db8b821b4460bbe123a2528fb5677d03db7a4b5", size = 2441942 },
+    { url = "https://files.pythonhosted.org/packages/8d/5d/fab7da936f5f30515fa75749d004cd7b1bc39915d4921c59c19a9b434dc9/xmlsec-1.3.15-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:0edff08e0442cdcc82bebf353ba4bcfd5a022f4b2751052ee1564afc5c78bef4", size = 3746323 },
+    { url = "https://files.pythonhosted.org/packages/11/21/5dea6e91126fbfa1663aaf1a8a9cd6b4e3f95e3bc9eb68ce092b68536bf4/xmlsec-1.3.15-cp312-cp312-win32.whl", hash = "sha256:e5c402e5633fd39f75fe124219d66d383a040ba04d0de54e024afeb7fe7d3e3a", size = 2146172 },
+    { url = "https://files.pythonhosted.org/packages/86/35/eb3fbfaf62601d22c9cd1c45fb6d94f57a848f422a5fdb9142d4b2e2cb38/xmlsec-1.3.15-cp312-cp312-win_amd64.whl", hash = "sha256:0c47f2347e8dcc0a48648b9702af53179618c204414a8e36926a9f61214ebf0b", size = 2442044 },
 ]
 
 [[package]]

@@ -15,7 +15,26 @@ dependencies = [
     { name = "google-auth" },
     { name = "lxml", extra = ["html-clean"] },
     { name = "odoo" },
+    { name = "odoo-addon-account-partner-company-group" },
     { name = "odoo-addon-auth-admin-passkey" },
+    { name = "odoo-addon-base-location" },
+    { name = "odoo-addon-base-location-geonames-import" },
+    { name = "odoo-addon-base-partner-company-group" },
+    { name = "odoo-addon-base-partner-sequence" },
+    { name = "odoo-addon-crm-partner-company-group" },
+    { name = "odoo-addon-partner-industry-secondary" },
+    { name = "odoo-addon-product-pricelist-supplierinfo" },
+    { name = "odoo-addon-product-sequence" },
+    { name = "odoo-addon-product-state" },
+    { name = "odoo-addon-project-parent" },
+    { name = "odoo-addon-project-role" },
+    { name = "odoo-addon-project-sequence" },
+    { name = "odoo-addon-project-task-default-stage" },
+    { name = "odoo-addon-project-type" },
+    { name = "odoo-addon-sale-order-line-menu" },
+    { name = "odoo-addon-sale-partner-company-group" },
+    { name = "odoo-addon-sale-partner-selectable-option" },
+    { name = "odoo-addon-web-notify" },
     { name = "pdfminer" },
     { name = "phonenumbers" },
     { name = "pyjwt" },
@@ -39,7 +58,26 @@ requires-dist = [
     { name = "google-auth" },
     { name = "lxml", extras = ["html-clean"], specifier = ">=5.2" },
     { name = "odoo", git = "https://github.com/OCA/OCB?branch=18.0" },
+    { name = "odoo-addon-account-partner-company-group", specifier = "==18.0.*" },
     { name = "odoo-addon-auth-admin-passkey", specifier = "==18.0.*" },
+    { name = "odoo-addon-base-location", specifier = "==18.0.*" },
+    { name = "odoo-addon-base-location-geonames-import", specifier = "==18.0.*" },
+    { name = "odoo-addon-base-partner-company-group", specifier = "==18.0.*" },
+    { name = "odoo-addon-base-partner-sequence", specifier = "==18.0.*" },
+    { name = "odoo-addon-crm-partner-company-group", specifier = "==18.0.*" },
+    { name = "odoo-addon-partner-industry-secondary", specifier = "==18.0.*" },
+    { name = "odoo-addon-product-pricelist-supplierinfo", specifier = "==18.0.*" },
+    { name = "odoo-addon-product-sequence", specifier = "==18.0.*" },
+    { name = "odoo-addon-product-state", specifier = "==18.0.*" },
+    { name = "odoo-addon-project-parent", specifier = "==18.0.*" },
+    { name = "odoo-addon-project-role", specifier = "==18.0.*" },
+    { name = "odoo-addon-project-sequence", specifier = "==18.0.*" },
+    { name = "odoo-addon-project-task-default-stage", specifier = "==18.0.*" },
+    { name = "odoo-addon-project-type", specifier = "==18.0.*" },
+    { name = "odoo-addon-sale-order-line-menu", specifier = "==18.0.*" },
+    { name = "odoo-addon-sale-partner-company-group", specifier = "==18.0.*" },
+    { name = "odoo-addon-sale-partner-selectable-option", specifier = "==18.0.*" },
+    { name = "odoo-addon-web-notify", specifier = "==18.0.*" },
     { name = "pdfminer" },
     { name = "phonenumbers" },
     { name = "pyjwt" },
@@ -666,6 +704,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "odoo-addon-account-partner-company-group"
+version = "18.0.1.0.0.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+    { name = "odoo-addon-base-partner-company-group" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/05/85/d34687ac1f9f67407c95321699cd4f6eb22404ac07f62a820d19928d7074/odoo_addon_account_partner_company_group-18.0.1.0.0.3-py3-none-any.whl", hash = "sha256:83c00014d519446d757f9b083c96ab481ac553323cd44c9315636273daad5ebe", size = 26515 },
+]
+
+[[package]]
 name = "odoo-addon-auth-admin-passkey"
 version = "18.0.1.0.0.3"
 source = { registry = "https://pypi.org/simple" }
@@ -674,6 +724,207 @@ dependencies = [
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/70/a8/b54f21a7b22aa840b1abac04d0b55b3c5444637386efa6165070aaabd652/odoo_addon_auth_admin_passkey-18.0.1.0.0.3-py3-none-any.whl", hash = "sha256:018301d1a012fb0e062bb5881c6531acc7131043abbac51397685a37393dd66f", size = 45781 },
+]
+
+[[package]]
+name = "odoo-addon-base-location"
+version = "18.0.1.0.0.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f1/44/2817d00f8da13ce1e14d1a1b308691c61af6ee03935a7be6285427a25af9/odoo_addon_base_location-18.0.1.0.0.3-py3-none-any.whl", hash = "sha256:c7bc875d581f9d68fd0b86d4e029c070e91d6278c9e22cf02b5c0c1242e6b3c0", size = 175721 },
+]
+
+[[package]]
+name = "odoo-addon-base-location-geonames-import"
+version = "18.0.1.0.0.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+    { name = "odoo-addon-base-location" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ac/ef/5e080c7869d54ee674cd9c422fe1508a3c64bfa2b1679ff2e8602e27125f/odoo_addon_base_location_geonames_import-18.0.1.0.0.4-py3-none-any.whl", hash = "sha256:90a029b8c769181fb5b1c0e60aa81aced65aa772d3b62b280a569a0bc7db6e16", size = 163069 },
+]
+
+[[package]]
+name = "odoo-addon-base-partner-company-group"
+version = "18.0.1.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c6/1c/499c7b4f6282bbee3b7c0e9d05cc30c05dedb60b269d3af082558ef94c59/odoo_addon_base_partner_company_group-18.0.1.1.0-py3-none-any.whl", hash = "sha256:5cf0ea31929a983314ad56aed1a316111e1b0b333e1006b806bb0559bf91b632", size = 31024 },
+]
+
+[[package]]
+name = "odoo-addon-base-partner-sequence"
+version = "18.0.1.0.0.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/55/3e/ab88b0ce37d5d0f55d25668fa9627566b717c5a02889f8366c3d615fa70a/odoo_addon_base_partner_sequence-18.0.1.0.0.3-py3-none-any.whl", hash = "sha256:66ee8581329d7797ac73d04bccb159e0d8d0fe978b29b4fd88e57c16b20625be", size = 65628 },
+]
+
+[[package]]
+name = "odoo-addon-crm-partner-company-group"
+version = "18.0.1.0.0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+    { name = "odoo-addon-base-partner-company-group" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d8/40/dfa599b859c901d5da683f37f405fa871f6246dd49021a42665e61815fd8/odoo_addon_crm_partner_company_group-18.0.1.0.0.2-py3-none-any.whl", hash = "sha256:c295c85023472775f7b3be5ece657570c32917abb66c574713239a7d5fe1aa1a", size = 24959 },
+]
+
+[[package]]
+name = "odoo-addon-partner-industry-secondary"
+version = "18.0.1.0.0.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/df/55/d1583d80674209f3199ff3a700248bbd29b17550e7f59f4c2a2561407c14/odoo_addon_partner_industry_secondary-18.0.1.0.0.3-py3-none-any.whl", hash = "sha256:2a42969f67c34435d5ff4bf1c54504774964d4f0c389e3353e7bfb0a7ba591a9", size = 120918 },
+]
+
+[[package]]
+name = "odoo-addon-product-pricelist-supplierinfo"
+version = "18.0.1.0.0.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/15/d2/df0570421f7414ed2c72aaf647f16fc31d91cc851aaef5868ad9dad7ba6a/odoo_addon_product_pricelist_supplierinfo-18.0.1.0.0.4-py3-none-any.whl", hash = "sha256:1f392ffc4fb7ef58a862ab23f7309b46827ea793f6d72c9878826e7c70a9b7b8", size = 44453 },
+]
+
+[[package]]
+name = "odoo-addon-product-sequence"
+version = "18.0.1.0.0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/47/c9/a5bd489ad84292c29fb612bb7c31837ec99f5462a9e09cb9eaf52709e262/odoo_addon_product_sequence-18.0.1.0.0.2-py3-none-any.whl", hash = "sha256:310bb6e7494cfa744b5a79770440e1bdc89037aae861d3891da9ef05d152de8e", size = 76926 },
+]
+
+[[package]]
+name = "odoo-addon-product-state"
+version = "18.0.1.0.0.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/1a/7f/5a9f895b8db3ba8db0d43a46f3866fbe84297de5c4882b0f4f4f5989058e/odoo_addon_product_state-18.0.1.0.0.5-py3-none-any.whl", hash = "sha256:1423d506a92af6d4f97df542c9409461a39dee9cc609695ad48a504cf382304b", size = 44461 },
+]
+
+[[package]]
+name = "odoo-addon-project-parent"
+version = "18.0.1.0.0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d5/a0/42a2976139e32685333ed60c0c4223aac38b4926c8ac5aca10b40512737a/odoo_addon_project_parent-18.0.1.0.0.2-py3-none-any.whl", hash = "sha256:c829bffef0ef15ff03a2e259f6f6400602fc0acbe19ba4283da6865711507a08", size = 30427 },
+]
+
+[[package]]
+name = "odoo-addon-project-role"
+version = "18.0.1.0.0.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/46/5f/73da933d1cb6468203cd5376822155ce0e6a081766d57c44642084a6e862/odoo_addon_project_role-18.0.1.0.0.4-py3-none-any.whl", hash = "sha256:1b3ba3381a83a1bda192ae13084d7acd7fc6583957286b4c59fd0f29ffc7ab5e", size = 62958 },
+]
+
+[[package]]
+name = "odoo-addon-project-sequence"
+version = "18.0.1.0.0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/08/50/d89395311c89c0663d0a377a43fefa830bee63971d27702e6cc758e69fa6/odoo_addon_project_sequence-18.0.1.0.0.2-py3-none-any.whl", hash = "sha256:a880460edc70698d2f932caa35382b0dd28577cd2469f6411a705354bf3c008a", size = 33905 },
+]
+
+[[package]]
+name = "odoo-addon-project-task-default-stage"
+version = "18.0.1.0.0.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/10/6f/128f533b512bcc01c9ddf2acc395e49135f94d8eb0b35502be4fd3b1d0d9/odoo_addon_project_task_default_stage-18.0.1.0.0.3-py3-none-any.whl", hash = "sha256:0130db08e5051bf87a647e57ca1e2efde7367b517c4cd27aa2e7d7c1fd7023e3", size = 57008 },
+]
+
+[[package]]
+name = "odoo-addon-project-type"
+version = "18.0.1.0.0.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/38/a8/88027752eb13ef619b5d029ec21e816de15094c320794e772d84677fd736/odoo_addon_project_type-18.0.1.0.0.5-py3-none-any.whl", hash = "sha256:d643a2a68a4aab8a0d312aaff5561a61d055692fe271a2fe86e9462984ebf39c", size = 37551 },
+]
+
+[[package]]
+name = "odoo-addon-sale-order-line-menu"
+version = "18.0.1.0.0.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0e/43/4c7f61572036c7ad1bf3dd99b61ca0d87ea94b8844f9b3215ea6fbeb9f93/odoo_addon_sale_order_line_menu-18.0.1.0.0.3-py3-none-any.whl", hash = "sha256:ded69a8c562fa7b5e769ed8fb915981d155c11c186d969f4905b7e56bb348e3d", size = 31678 },
+]
+
+[[package]]
+name = "odoo-addon-sale-partner-company-group"
+version = "18.0.1.0.0.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+    { name = "odoo-addon-base-partner-company-group" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/88/34/6d121c30b96cae041b3d9169c95b68f7999f8b5e9bb8c119da1eb9991508/odoo_addon_sale_partner_company_group-18.0.1.0.0.3-py3-none-any.whl", hash = "sha256:75f61dcb8d87d5d9c19dd175ba0d05337d31e134b58dd3a4aac13af8b92e3fef", size = 28454 },
+]
+
+[[package]]
+name = "odoo-addon-sale-partner-selectable-option"
+version = "18.0.1.0.0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ef/b9/34e93f0b7f0b25045b04ea3edb631fe45e857586504df5992115f3e2ff96/odoo_addon_sale_partner_selectable_option-18.0.1.0.0.2-py3-none-any.whl", hash = "sha256:1045f201629bdc8be1ac8d7398c8f1db80a8a400d9259e12e70af7e9b666438a", size = 27740 },
+]
+
+[[package]]
+name = "odoo-addon-web-notify"
+version = "18.0.1.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/57/cb/7e246f6234c1d1f84a694c134f3110a859b7e764c1d18ac82e2c90e6fa0f/odoo_addon_web_notify-18.0.1.0.1-py3-none-any.whl", hash = "sha256:d0fb3e34c63bbcae762d9623515d20a844d2b8952e54cda4e5a252b9e64718de", size = 302570 },
 ]
 
 [[package]]

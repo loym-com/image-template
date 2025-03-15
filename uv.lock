@@ -3,12 +3,61 @@ revision = 1
 requires-python = "==3.12.*"
 
 [[package]]
+name = "18c"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "asn1crypto" },
+    { name = "click-odoo-contrib" },
+    { name = "cryptography" },
+    { name = "geoip2" },
+    { name = "lxml", extra = ["html-clean"] },
+    { name = "odoo" },
+    { name = "odoo-addon-account-financial-report" },
+    { name = "odoo-addon-account-reconcile-oca" },
+    { name = "odoo-addon-account-tax-balance" },
+    { name = "odoo-addon-auth-admin-passkey" },
+    { name = "pdfminer" },
+    { name = "phonenumbers" },
+    { name = "pyopenssl" },
+    { name = "pyserial" },
+    { name = "python-ldap" },
+    { name = "pyusb" },
+    { name = "qrcode" },
+    { name = "setuptools" },
+    { name = "werkzeug" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "asn1crypto" },
+    { name = "click-odoo-contrib" },
+    { name = "cryptography" },
+    { name = "geoip2" },
+    { name = "lxml", extras = ["html-clean"], specifier = ">=5.2" },
+    { name = "odoo", git = "https://github.com/OCA/OCB?branch=18.0" },
+    { name = "odoo-addon-account-financial-report", specifier = "==18.0.*" },
+    { name = "odoo-addon-account-reconcile-oca", git = "https://github.com/OCA/account-reconcile?subdirectory=account_reconcile_oca&rev=refs%2Fpull%2F808%2Fhead" },
+    { name = "odoo-addon-account-tax-balance", specifier = "==18.0.*" },
+    { name = "odoo-addon-auth-admin-passkey", specifier = "==18.0.*" },
+    { name = "pdfminer" },
+    { name = "phonenumbers" },
+    { name = "pyopenssl" },
+    { name = "pyserial" },
+    { name = "python-ldap" },
+    { name = "pyusb" },
+    { name = "qrcode" },
+    { name = "setuptools", specifier = "<71" },
+    { name = "werkzeug", specifier = "==3.0.*" },
+]
+
+[[package]]
 name = "aiohappyeyeballs"
-version = "2.5.0"
+version = "2.6.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/a2/0c/458958007041f4b4de2d307e6b75d9e7554dad0baf26fe7a48b741aac126/aiohappyeyeballs-2.5.0.tar.gz", hash = "sha256:18fde6204a76deeabc97c48bdd01d5801cfda5d6b9c8bbeb1aaaee9d648ca191", size = 22494 }
+sdist = { url = "https://files.pythonhosted.org/packages/26/30/f84a107a9c4331c14b2b586036f40965c128aa4fee4dda5d3d51cb14ad54/aiohappyeyeballs-2.6.1.tar.gz", hash = "sha256:c3f9d0113123803ccadfdf3f0faa505bc78e6a72d1cc4806cbd719826e943558", size = 22760 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1b/9a/e4886864ce06e1579bd428208127fbdc0d62049c751e4e9e3b509c0059dc/aiohappyeyeballs-2.5.0-py3-none-any.whl", hash = "sha256:0850b580748c7071db98bffff6d4c94028d0d3035acc20fd721a0ce7e8cac35d", size = 15128 },
+    { url = "https://files.pythonhosted.org/packages/0f/15/5bf3b99495fb160b63f95972b81750f18f7f4e02ad051373b669d17d44f2/aiohappyeyeballs-2.6.1-py3-none-any.whl", hash = "sha256:f349ba8f4b75cb25c99c5c2d84e997e485204d2902a9597802b0371f09331fb8", size = 15265 },
 ]
 
 [[package]]
@@ -67,11 +116,11 @@ wheels = [
 
 [[package]]
 name = "attrs"
-version = "25.1.0"
+version = "25.3.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/49/7c/fdf464bcc51d23881d110abd74b512a42b3d5d376a55a831b44c603ae17f/attrs-25.1.0.tar.gz", hash = "sha256:1c97078a80c814273a76b2a298a932eb681c87415c11dee0a6921de7f1b02c3e", size = 810562 }
+sdist = { url = "https://files.pythonhosted.org/packages/5a/b0/1367933a8532ee6ff8d63537de4f1177af4bff9f3e829baf7331f595bb24/attrs-25.3.0.tar.gz", hash = "sha256:75d7cefc7fb576747b2c81b4442d4d4a1ce0900973527c011d1030fd3bf4af1b", size = 812032 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/fc/30/d4986a882011f9df997a55e6becd864812ccfcd821d64aac8570ee39f719/attrs-25.1.0-py3-none-any.whl", hash = "sha256:c75a69e28a550a7e93789579c22aa26b0f5b83b75dc4e08fe092980051e1090a", size = 63152 },
+    { url = "https://files.pythonhosted.org/packages/77/06/bb80f5f86020c4551da315d78b3ab75e8228f89f0162f2c3a819e407941a/attrs-25.3.0-py3-none-any.whl", hash = "sha256:427318ce031701fea540783410126f03899a97ffc6f61596ad581ac2e40e3bc3", size = 63815 },
 ]
 
 [[package]]
@@ -523,55 +572,6 @@ wheels = [
 ]
 
 [[package]]
-name = "my-project"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "asn1crypto" },
-    { name = "click-odoo-contrib" },
-    { name = "cryptography" },
-    { name = "geoip2" },
-    { name = "lxml", extra = ["html-clean"] },
-    { name = "odoo" },
-    { name = "odoo-addon-account-financial-report" },
-    { name = "odoo-addon-account-reconcile-oca" },
-    { name = "odoo-addon-account-tax-balance" },
-    { name = "odoo-addon-auth-admin-passkey" },
-    { name = "pdfminer" },
-    { name = "phonenumbers" },
-    { name = "pyopenssl" },
-    { name = "pyserial" },
-    { name = "python-ldap" },
-    { name = "pyusb" },
-    { name = "qrcode" },
-    { name = "setuptools" },
-    { name = "werkzeug" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "asn1crypto" },
-    { name = "click-odoo-contrib" },
-    { name = "cryptography" },
-    { name = "geoip2" },
-    { name = "lxml", extras = ["html-clean"], specifier = ">=5.2" },
-    { name = "odoo", git = "https://github.com/OCA/OCB?branch=18.0" },
-    { name = "odoo-addon-account-financial-report", specifier = "==18.0.*" },
-    { name = "odoo-addon-account-reconcile-oca", git = "https://github.com/OCA/account-reconcile?subdirectory=account_reconcile_oca&rev=refs%2Fpull%2F808%2Fhead" },
-    { name = "odoo-addon-account-tax-balance", specifier = "==18.0.*" },
-    { name = "odoo-addon-auth-admin-passkey", specifier = "==18.0.*" },
-    { name = "pdfminer" },
-    { name = "phonenumbers" },
-    { name = "pyopenssl" },
-    { name = "pyserial" },
-    { name = "python-ldap" },
-    { name = "pyusb" },
-    { name = "qrcode" },
-    { name = "setuptools", specifier = "<71" },
-    { name = "werkzeug", specifier = "==3.0.*" },
-]
-
-[[package]]
 name = "num2words"
 version = "0.5.14"
 source = { registry = "https://pypi.org/simple" }
@@ -678,14 +678,14 @@ wheels = [
 
 [[package]]
 name = "odoo-addon-account-tax-balance"
-version = "18.0.1.0.0.3"
+version = "18.0.1.0.0.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "odoo" },
     { name = "odoo-addon-date-range" },
 ]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ab/a5/4b86eff824367bccc280597fa52bcb6dd7daa931b05e457b97458c0204d6/odoo_addon_account_tax_balance-18.0.1.0.0.3-py3-none-any.whl", hash = "sha256:dff0e6afda79bf0a71e41cbdae77f12cf236c75bdde54327304a6137e067f4f0", size = 83994 },
+    { url = "https://files.pythonhosted.org/packages/73/7d/fbc33ceb9093a47751eeb4f86500123f32ed44ea760c2a92122d4ab4fdb6/odoo_addon_account_tax_balance-18.0.1.0.0.4-py3-none-any.whl", hash = "sha256:337530d24ed9005703177527acec470235caf5c3aa77036161fefda1cd7b0b22", size = 84003 },
 ]
 
 [[package]]
@@ -775,11 +775,11 @@ sdist = { url = "https://files.pythonhosted.org/packages/71/a3/155c5cde5f9c0b106
 
 [[package]]
 name = "phonenumbers"
-version = "9.0.0"
+version = "9.0.1"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/88/96/58ab3aa4f8695c85f5dce60c15bb3b113856f420d4f0575f6b6e92c1acb5/phonenumbers-9.0.0.tar.gz", hash = "sha256:094a6f728e3c2b1906df4494a480743a3c797320f721f2b53f1400fd4d8ed5f5", size = 2296775 }
+sdist = { url = "https://files.pythonhosted.org/packages/8c/b3/e88f437e6a726c49f9488c49d50fad19e7ac0517947d864c147d9759de5c/phonenumbers-9.0.1.tar.gz", hash = "sha256:7507bd6228d3b5fc4a3661c28f08157ac12a3386aca50bc6d2e71d91a00ff2be", size = 2296736 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/62/82/943ce12a9db8932be3a1baff7cbc93524262942f2c41678242f410c8f420/phonenumbers-9.0.0-py2.py3-none-any.whl", hash = "sha256:f566eddf6219d9af9b4aad454ba411a1df565d13b875a490fd33d1d202c1148d", size = 2582416 },
+    { url = "https://files.pythonhosted.org/packages/65/c5/09aacf3a079cd33ecc22c48075c23b57b4a699a4ced000f3202bbd5068b5/phonenumbers-9.0.1-py2.py3-none-any.whl", hash = "sha256:ea8ec8083d85e5dcba48a6ba633ee68481e60331200f99744ae24a08e5026b13", size = 2582389 },
 ]
 
 [[package]]

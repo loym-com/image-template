@@ -46,6 +46,7 @@ dependencies = [
     "python-ldap",
     "pyusb",
     "qrcode",
+    "PyPDF2==1.28.6",
 ]
 addons_dirs = ["addons"]
 

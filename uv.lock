@@ -17,6 +17,7 @@ dependencies = [
     { name = "odoo-addon-account-reconcile-oca" },
     { name = "odoo-addon-account-tax-balance" },
     { name = "odoo-addon-auth-admin-passkey" },
+    { name = "odoo-addon-document-page" },
     { name = "pdfminer" },
     { name = "phonenumbers" },
     { name = "pyopenssl" },
@@ -41,6 +42,7 @@ requires-dist = [
     { name = "odoo-addon-account-reconcile-oca", git = "https://github.com/OCA/account-reconcile?subdirectory=account_reconcile_oca&rev=refs%2Fpull%2F808%2Fhead" },
     { name = "odoo-addon-account-tax-balance", specifier = "==18.0.*" },
     { name = "odoo-addon-auth-admin-passkey", specifier = "==18.0.*" },
+    { name = "odoo-addon-document-page", specifier = "==18.0.*" },
     { name = "pdfminer" },
     { name = "phonenumbers" },
     { name = "pyopenssl" },
@@ -710,6 +712,29 @@ dependencies = [
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/af/27/dce0d236c298a94829837b8246ac80a5f78260d60e2d8e680fb30bd46f0c/odoo_addon_date_range-18.0.1.0.0.4-py3-none-any.whl", hash = "sha256:c4480b596dea3f4716fe0579078743af014792f6eb7693e1b277dd9001c4b286", size = 2300356 },
+]
+
+[[package]]
+name = "odoo-addon-document-knowledge"
+version = "18.0.1.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/48/86/17d2f486fc3868098f263097d9ea5254a15e6c42af2752683050207a89fc/odoo_addon_document_knowledge-18.0.1.0.1-py3-none-any.whl", hash = "sha256:d725770ede17a0bfa2f20ed450102bf615beaa03d8fe5b512d75523516c46f3a", size = 138285 },
+]
+
+[[package]]
+name = "odoo-addon-document-page"
+version = "18.0.1.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+    { name = "odoo-addon-document-knowledge" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8f/5d/c70710049010b023486e12357c3da7c375aebdf7078db88849d4b2bbc249/odoo_addon_document_page-18.0.1.0.1-py3-none-any.whl", hash = "sha256:3369d6297dcdf5852d35d0416bc108b73372292a6163ff1b0417f7d770508299", size = 916862 },
 ]
 
 [[package]]

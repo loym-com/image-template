@@ -36,6 +36,8 @@ dependencies = [
     "click-odoo-contrib",
     "python-ldap", # auth_ldap has external dependency ldap in __manifest__.py. BTW [tool.uv.sources] works for odoo but not for addons.
     "freezegun",
+    "paramiko", # cetmix
+    "pyyaml", # cetmix
 ]
 addons_dirs = ["odoo"]
 

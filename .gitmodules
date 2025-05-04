@@ -1,0 +1,10 @@
+[submodule "cetmix/cetmix-tower"]
+	path = cetmix/cetmix-tower
+	url = git@github.com:cetmix/cetmix-tower.git
+	branch = 17.0
+	shallow = true
+[submodule "loymcom/apps"]
+	path = loymcom/apps
+	url = git@github.com:loymcom/apps.git
+	branch = 17.0
+	shallow = true

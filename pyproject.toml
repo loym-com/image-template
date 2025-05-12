@@ -48,7 +48,7 @@ dependencies = [
     "qrcode",
     "PyPDF2==1.28.6",
 ]
-addons_dirs = ["addons"]
+addons_dirs = ["addons", "odoo/design-themes", "odoo/industry"]
 
 [tool.uv.sources]
 odoo = { git = "https://github.com/OCA/OCB", branch = "18.0" }

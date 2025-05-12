@@ -17,6 +17,7 @@ dependencies = [
     { name = "odoo-addon-account-reconcile-oca" },
     { name = "odoo-addon-account-tax-balance" },
     { name = "odoo-addon-auth-admin-passkey" },
+    { name = "odoo-addon-dbfilter-from-header" },
     { name = "odoo-addon-document-page" },
     { name = "pdfminer" },
     { name = "phonenumbers" },
@@ -39,9 +40,10 @@ requires-dist = [
     { name = "lxml", extras = ["html-clean"], specifier = ">=5.2" },
     { name = "odoo", git = "https://github.com/OCA/OCB?branch=18.0" },
     { name = "odoo-addon-account-financial-report", specifier = "==18.0.*" },
-    { name = "odoo-addon-account-reconcile-oca", git = "https://github.com/OCA/account-reconcile?subdirectory=account_reconcile_oca&rev=refs%2Fpull%2F808%2Fhead" },
+    { name = "odoo-addon-account-reconcile-oca", specifier = "==18.0.*" },
     { name = "odoo-addon-account-tax-balance", specifier = "==18.0.*" },
     { name = "odoo-addon-auth-admin-passkey", specifier = "==18.0.*" },
+    { name = "odoo-addon-dbfilter-from-header", specifier = "==18.0.*" },
     { name = "odoo-addon-document-page", specifier = "==18.0.*" },
     { name = "pdfminer" },
     { name = "phonenumbers" },
@@ -669,12 +671,15 @@ wheels = [
 
 [[package]]
 name = "odoo-addon-account-reconcile-oca"
-version = "18.0.1.0.0.5"
-source = { git = "https://github.com/OCA/account-reconcile?subdirectory=account_reconcile_oca&rev=refs%2Fpull%2F808%2Fhead#cff464e5acbf14d2690990068afae13a012df069" }
+version = "18.0.1.0.3.2"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "odoo" },
     { name = "odoo-addon-account-reconcile-model-oca" },
     { name = "odoo-addon-account-statement-base" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/93/31/71d0c817c036775e9cc526286ea37ce32187f45c1e0e8987509e37176b22/odoo_addon_account_reconcile_oca-18.0.1.0.3.2-py3-none-any.whl", hash = "sha256:de052b347a6ec3da4870138ed88b35a6d458104c2748b70bc7f9b0a379222e7c", size = 115980, upload-time = "2025-04-17T02:38:04.875Z" },
 ]
 
 [[package]]
@@ -720,6 +725,17 @@ dependencies = [
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/af/27/dce0d236c298a94829837b8246ac80a5f78260d60e2d8e680fb30bd46f0c/odoo_addon_date_range-18.0.1.0.0.4-py3-none-any.whl", hash = "sha256:c4480b596dea3f4716fe0579078743af014792f6eb7693e1b277dd9001c4b286", size = 2300356, upload-time = "2025-01-28T03:37:33.051Z" },
+]
+
+[[package]]
+name = "odoo-addon-dbfilter-from-header"
+version = "18.0.1.0.0.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "odoo" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/2c/34/83aedcc4f1ae597fd6449cc718492b28912010feab354016ec6f1e9d14e0/odoo_addon_dbfilter_from_header-18.0.1.0.0.3-py3-none-any.whl", hash = "sha256:bdc2226ded015216d741984ebe3458ebda3bcf47b62b44bdd08690051989b609", size = 24392, upload-time = "2024-11-13T04:25:04.117Z" },
 ]
 
 [[package]]

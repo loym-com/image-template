@@ -10,6 +10,7 @@
         "base_partner_company_group",
         "base_partner_sequence",
         "crm_partner_company_group",
+        "dbfilter_from_header",
         # "partner_contact_sale_info_propagation", # 1:33
         "partner_industry_secondary",
         "product_pricelist_supplierinfo",

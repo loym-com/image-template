@@ -16,7 +16,7 @@ dynamic = ["dependencies"]
 [tool.uv]
 cache-keys = [
     { file = "pyproject.toml" },
-    { file = "odoo/**/__manifest__.py" },
+    { file = "addons/dependencies/__manifest__.py" },
 ]
 
 [tool.hatch.build]
@@ -55,7 +55,7 @@ dependencies = [
     "zeep",
     "PyPDF2==1.28.6",
 ]
-addons_dirs = ["odoo"]
+addons_dirs = ["addons"]
 
 [tool.uv.sources]
 odoo = { git = "https://github.com/OCA/OCB", branch = "18.0" }

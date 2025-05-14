@@ -11,6 +11,7 @@ RUN set -e \
   && apt update \
   && apt -y install --no-install-recommends \
        postgresql-client \
+       git \
   && apt -y clean \
   && rm -rf /var/lib/apt/lists/*
 
@@ -31,7 +32,6 @@ FROM base AS dependencies
 RUN set -e \
   && apt update \
   && apt -y install --no-install-recommends \
-       git \
        python3.12-dev \
        build-essential \
        libpq-dev \

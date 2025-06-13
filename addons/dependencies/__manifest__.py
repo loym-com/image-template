@@ -9,6 +9,7 @@
         "auth_admin_passkey",
         "dbfilter_from_header",
         "document_page",
+        "mis_builder_demo",
     ],
-    "version": "18.0.1.0.1",
+    "version": "18.0.1.0.2",
 }

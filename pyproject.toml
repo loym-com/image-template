@@ -53,7 +53,7 @@ dependencies = [
     "pyjwt",
     # "xmlsec", # error
     "zeep",
-    "PyPDF2==1.28.6",
+    # "PyPDF2==1.28.6",
 ]
 addons_dirs = ["addons"]
 

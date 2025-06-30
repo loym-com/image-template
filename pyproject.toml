@@ -54,6 +54,7 @@ dependencies = [
     # "xmlsec", # error
     "zeep",
     # "PyPDF2==1.28.6",
+    "PyPDF2==2.12.1",
 ]
 addons_dirs = ["addons"]
 

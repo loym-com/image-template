@@ -11,6 +11,11 @@
         "base_partner_sequence",
         "crm_partner_company_group",
         "dbfilter_from_header",
+        "document_page_quality_manual",
+        "document_page_approval",
+        "document_page_procedure",
+        "document_page_environment_manual",
+        "document_page_work_instruction",
         # "partner_contact_sale_info_propagation", # 1:33
         "partner_industry_secondary",
         "product_pricelist_supplierinfo",

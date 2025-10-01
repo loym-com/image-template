@@ -33,29 +33,29 @@ dependencies = [
     "lxml[html_clean]>=5.2",
     "setuptools<71",
     "werkzeug==3.0.*",
-    # "click-odoo-contrib",
+    "click-odoo-contrib",
     # "git+https://github.com/acsone/click-odoo-contrib.git@master#egg=click-odoo-contrib",
 
     # odoo/community
-    # "asn1crypto",
-    # "cryptography",
-    # "geoip2",
+    "asn1crypto",
+    "cryptography",
+    "geoip2",
     # ldap -> python-ldap
-    # "pdfminer",
-    # "phonenumbers",
-    # "pyOpenSSL",
-    # "pyserial",
-    # "python-ldap",
-    # "pyusb",
-    # "qrcode",
+    "pdfminer",
+    "phonenumbers",
+    "pyOpenSSL",
+    "pyserial",
+    "python-ldap",
+    "pyusb",
+    "qrcode",
 
     # odoo/enterprise
-    # "cryptography",
-    # "dbfread",
-    # "google_auth",
-    # "pyjwt",
-    # "xmlsec", # error
-    # "zeep",
+    "cryptography",
+    "dbfread",
+    "google_auth",
+    "pyjwt",
+    "xmlsec", # error
+    "zeep",
     # "PyPDF2==1.28.6",
     # "PyPDF2==2.12.1",
 ]

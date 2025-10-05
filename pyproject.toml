@@ -63,4 +63,4 @@ addons_dirs = ["addons"]
 [tool.uv.sources]
 odoo = { git = "https://github.com/OCA/OCB", branch = "19.0" }
 
-# odoo-addon-mis_builder_budget = { git = "https://github.com/OCA/mis-builder", rev = "refs/pull/634/head", subdirectory = "mis_builder_budget" }
+odoo-addon-project_parent = { git = "https://github.com/norlinhenrik/oca-project", branch = "19.0-mig-project_parent", subdirectory = "project_parent" }

@@ -20,7 +20,7 @@
         # "product_pricelist_supplierinfo",
         # "product_sequence",
         # "product_state",
-        # "project_parent",
+        "project_parent",
         # "project_role",
         # "project_sequence",
         # "project_task_default_stage",

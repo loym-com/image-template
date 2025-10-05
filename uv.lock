@@ -15,6 +15,7 @@ dependencies = [
     { name = "google-auth" },
     { name = "lxml", extra = ["html-clean"] },
     { name = "odoo" },
+    { name = "odoo-addon-project-parent" },
     { name = "pdfminer" },
     { name = "phonenumbers" },
     { name = "pyjwt" },
@@ -40,6 +41,7 @@ requires-dist = [
     { name = "google-auth" },
     { name = "lxml", extras = ["html-clean"], specifier = ">=5.2" },
     { name = "odoo", git = "https://github.com/OCA/OCB?branch=19.0" },
+    { name = "odoo-addon-project-parent", git = "https://github.com/norlinhenrik/oca-project?subdirectory=project_parent&branch=19.0-mig-project_parent" },
     { name = "pdfminer" },
     { name = "phonenumbers" },
     { name = "pyjwt" },
@@ -671,6 +673,14 @@ dependencies = [
     { name = "xlsxwriter" },
     { name = "xlwt" },
     { name = "zeep" },
+]
+
+[[package]]
+name = "odoo-addon-project-parent"
+version = "19.0.1.0.0.1"
+source = { git = "https://github.com/norlinhenrik/oca-project?subdirectory=project_parent&branch=19.0-mig-project_parent#895a0351b21ba2b88a618f5ed9b5ed3735e681a2" }
+dependencies = [
+    { name = "odoo" },
 ]
 
 [[package]]
